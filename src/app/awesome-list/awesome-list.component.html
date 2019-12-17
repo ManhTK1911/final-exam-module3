@@ -1,0 +1,5 @@
+<div class="row">
+  <div class="col-4" *ngFor="let item of awesomeList" style="padding-top: 10px">
+    <app-awesome [awesome]="item" (delete)="updateList()" (edit)="goToEdit(item)"></app-awesome>
+  </div>
+</div>
